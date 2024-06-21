@@ -33,9 +33,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.regBtn = new System.Windows.Forms.Button();
             this.haveAccbtn = new System.Windows.Forms.Button();
-            this.textName = new System.Windows.Forms.TextBox();
-            this.textPassoword = new System.Windows.Forms.TextBox();
-            this.textConfirmPassword = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.txtconfirmpassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -89,39 +89,42 @@
             this.haveAccbtn.TabIndex = 4;
             this.haveAccbtn.Text = "have an account? log in now";
             this.haveAccbtn.UseVisualStyleBackColor = true;
+            this.haveAccbtn.Click += new System.EventHandler(this.haveAccbtn_Click);
             // 
-            // textName
+            // txtusername
             // 
-            this.textName.Location = new System.Drawing.Point(368, 58);
-            this.textName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(164, 27);
-            this.textName.TabIndex = 5;
+            this.txtusername.Location = new System.Drawing.Point(368, 58);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(164, 27);
+            this.txtusername.TabIndex = 5;
+            this.txtusername.TextChanged += new System.EventHandler(this.txtusername_TextChanged);
             // 
-            // textPassoword
+            // txtpassword
             // 
-            this.textPassoword.Location = new System.Drawing.Point(368, 134);
-            this.textPassoword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.textPassoword.Name = "textPassoword";
-            this.textPassoword.Size = new System.Drawing.Size(164, 27);
-            this.textPassoword.TabIndex = 6;
+            this.txtpassword.Location = new System.Drawing.Point(368, 134);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(164, 27);
+            this.txtpassword.TabIndex = 6;
+            this.txtpassword.TextChanged += new System.EventHandler(this.textPassoword_TextChanged);
             // 
-            // textConfirmPassword
+            // txtconfirmpassword
             // 
-            this.textConfirmPassword.Location = new System.Drawing.Point(368, 227);
-            this.textConfirmPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.textConfirmPassword.Name = "textConfirmPassword";
-            this.textConfirmPassword.Size = new System.Drawing.Size(164, 27);
-            this.textConfirmPassword.TabIndex = 7;
+            this.txtconfirmpassword.Location = new System.Drawing.Point(368, 227);
+            this.txtconfirmpassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtconfirmpassword.Name = "txtconfirmpassword";
+            this.txtconfirmpassword.Size = new System.Drawing.Size(164, 27);
+            this.txtconfirmpassword.TabIndex = 7;
             // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 623);
-            this.Controls.Add(this.textConfirmPassword);
-            this.Controls.Add(this.textPassoword);
-            this.Controls.Add(this.textName);
+            this.Controls.Add(this.txtconfirmpassword);
+            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.txtusername);
             this.Controls.Add(this.haveAccbtn);
             this.Controls.Add(this.regBtn);
             this.Controls.Add(this.label3);
@@ -144,9 +147,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button regBtn;
         private System.Windows.Forms.Button haveAccbtn;
-        private System.Windows.Forms.TextBox textName;
-        private System.Windows.Forms.TextBox textPassoword;
-        private System.Windows.Forms.TextBox textConfirmPassword;
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.TextBox txtconfirmpassword;
     }
 }
 
