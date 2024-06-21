@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(247, 72);
+            this.label1.Location = new System.Drawing.Point(164, 89);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 18);
@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(247, 150);
+            this.label2.Location = new System.Drawing.Point(164, 167);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 18);
@@ -59,15 +59,17 @@
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(400, 72);
+            this.txtpassword.Location = new System.Drawing.Point(317, 164);
             this.txtpassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtpassword.Name = "txtpassword";
+            this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(164, 27);
             this.txtpassword.TabIndex = 2;
+            this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(400, 145);
+            this.txtusername.Location = new System.Drawing.Point(317, 80);
             this.txtusername.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(164, 27);
@@ -75,17 +77,18 @@
             // 
             // button1loginbtn
             // 
-            this.button1loginbtn.Location = new System.Drawing.Point(410, 236);
+            this.button1loginbtn.Location = new System.Drawing.Point(336, 256);
             this.button1loginbtn.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button1loginbtn.Name = "button1loginbtn";
             this.button1loginbtn.Size = new System.Drawing.Size(125, 32);
             this.button1loginbtn.TabIndex = 4;
             this.button1loginbtn.Text = "Login";
             this.button1loginbtn.UseVisualStyleBackColor = true;
+            this.button1loginbtn.Click += new System.EventHandler(this.button1loginbtn_Click);
             // 
             // button2regbtn
             // 
-            this.button2regbtn.Location = new System.Drawing.Point(377, 290);
+            this.button2regbtn.Location = new System.Drawing.Point(294, 307);
             this.button2regbtn.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button2regbtn.Name = "button2regbtn";
             this.button2regbtn.Size = new System.Drawing.Size(206, 73);
