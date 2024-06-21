@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySqlConnector;
+
 
 namespace registration_and_login
 {
@@ -23,6 +25,11 @@ namespace registration_and_login
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regBtn_Click(object sender, EventArgs e)
         {
 
         }

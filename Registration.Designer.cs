@@ -78,6 +78,7 @@
             this.regBtn.TabIndex = 3;
             this.regBtn.Text = "Register now";
             this.regBtn.UseVisualStyleBackColor = true;
+            this.regBtn.Click += new System.EventHandler(this.regBtn_Click);
             // 
             // haveAccbtn
             // 
@@ -117,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 623);
+            this.ClientSize = new System.Drawing.Size(700, 623);
             this.Controls.Add(this.textConfirmPassword);
             this.Controls.Add(this.textPassoword);
             this.Controls.Add(this.textName);
