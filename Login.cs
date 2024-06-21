@@ -16,5 +16,17 @@ namespace registration_and_login
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2regbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide(); ;
+            var register = new Registration();
+            register.ShowDialog();
+        }
     }
 }
